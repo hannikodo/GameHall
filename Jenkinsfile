@@ -11,7 +11,7 @@ pipeline {
         }
         
         stage('install') {
-            ehco 'install QT 5.9.1'
+            sh 'ehco install QT 5.9.1'
             sh 'sudo apt-get install -qq qt59base'
             sh 'sudo apt-get install -qq qt59webengine'
             sh 'source /opt/qt59/bin/qt59-env.sh'
