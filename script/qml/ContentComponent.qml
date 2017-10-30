@@ -9,22 +9,29 @@ Item {
         id: swipeView
         anchors.fill: parent
         Page {
-            TextField {
-                id: textField1
-                anchors.left: parent.left
-                placeholderText: qsTr("Game Hall Dev Text Field")
+            ChickenLeg {
+                name: "杨光"
+                x: 5; y:padd
             }
-            Button {
-                id: button1
-                anchors.right: parent.right
-                text: qsTr("Press Me")
-                onClicked: {
-                    console.log("Button Pressed. Entered text: " + textField1.text);
-                }
+
+            ChickenLeg {
+                name: "蔡益盛"
+                x: 5; y: height+2*padd
             }
-            Label {
-                text: qsTr("First page")
-                anchors.centerIn: parent
+
+            ChickenLeg {
+                name: "黄怡霖"
+                x: 5; y: height*2+3*padd
+            }
+
+            ChickenLeg {
+                name: "韩敏皓"
+                x: 5; y: height*3+4*padd
+            }
+
+            ChickenLeg {
+                name: "潘山"
+                x: 5; y: height*4+5*padd
             }
         }
 
